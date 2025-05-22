@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Brunda CS | Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pz5bpj6MCI9N9r+5rSAGtX3oHq9crvS4rQXWKeH82e6Mtv5Nl4+NLb5LG9VUE3vN4RC1ssW2twfWx5rG7x5C3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style1.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <style>
+    :root {
+      --bg: #0f0f0f;
+      --accent: #ff416c;
+      --text: #f4f4f4;
+      --secondary: #888;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'times new roman', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #ff4e50, #1f1c2c);
+      color: white;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    .typewriter {
+      font-size: 1.5rem;
+      border-right: 3px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards;
+    }
+    @keyframes typing {
+      to {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #1f1c2c;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid var(--accent);
+      padding-left: 1rem;
+    }
+    .about {
+      line-height: 1.6;
+      color: var(--secondary);
+    }
+    .skills, .projects, .certifications {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 65, 108, 0.3);
+    }
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .contact-icons a {
+      color: var(--text);
+      font-size: 2rem;
+      transition: color 0.3s ease;
+    }
+    .contact-icons a:hover {
+      color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1f1c2c;
+      color: var(--secondary);
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      line-height: 1.8;
+      color: var(--secondary);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <body>
+        <!-- Nav -->
+        <nav>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+          <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-ellipsis-v"></i> <!-- Three dots icon -->
+          </button>
+        </nav>
+      
+        <!-- Hero -->
+        <header class="hero">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>I'm <span>Brunda CS</span></h1>
+              <p>Graduate Student | Mysore</p>
+            </div>
+            <div class="hero-image">
+              <img src="images/bg_1.png" alt="Your Photo">
+            </div>
+          </div>
+        </header>
+        
+      
+  <!-- Hero -->
+    <!-- <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>[Your Name]</span></h1>
+        <p>Web Developer | Creative Coder | Dreamer</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/bg_1.png" alt="Your Photo">
+      </div>
+    </div>
+</header> -->
+  
+
+  <!-- Nav -->
+  <!-- <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav> -->
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="about">
+      A final-year BCA student and have a clear understanding of programming, database management, and software development. With an interest to work based on the learned skills and work with the industry experts and contribute to the projects.</p>
+  </section>
+
+  <!-- Education -->
+  <!-- <section id="education">
+    <h2 class="section-title">Education</h2>
+    <ul>
+      <li><strong>SSLC:</strong> XYZ High School - 90% (Year)</li>
+      <li><strong>PUC:</strong> ABC PU College - 85% (Year)</li>
+      <li><strong>Degree:</strong> Bachelor of Computer Applications - 8.5 CGPA (Year)</li>
+    </ul>
+  </section> -->
+  <!-- Education -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education">
+      <div class="card">
+        <strong>Degree:</strong> 
+        <h4>St. Joseph's First Grade College, Mysore</h4>
+        <h5>Bachelor of Computer Application | 9.28cgpa</h5>
+      </div>
+      <div class="card">
+        <strong>PUC:</strong> 
+        <h4>City Composite First Grade College, Bangalore</h4>
+        <h5>Percentage: 56%</h5>
+      </div>
+      <div class="card">
+        <strong>SSLC:</strong> 
+        <h4>Green Park Central School, Udupi</h4>
+        <h5>Percentage: 63%</h5>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card">HTML / CSS</div>
+      <div class="card">PHP / MySQL</div>
+      <div class="card">Python</div>
+      <div class="card">Database / Data Visualization</div>
+      <div class="card">Microsoft Office Suite</div>
+      <div class="card">Git / GitHub</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Planet Encyclopedia</h3>
+        <p>Developed an interactive mini-website using HTML, CSS, and JavaScript.</p><br> <p>Designed a revolving solar system animation and an in-depth planet encyclopedia.</p>
+      </div>
+      <div class="card">
+        <h3>Heart Attack in Youngsters Records Prediction</h3>
+        <p>Analyzed 100+ patient records with attributes like age, gender, smoking status, cholesterol levels, BMI, blood pressure, and ECG results.</p>
+<br><p>Applied data analytics techniques like power BI to predict heart attack risks.</p>
+      </div>
+      <div class="card">
+        <h3>Nrittya</h3>
+        <p>A Real time Image Recognition of Indian Classical Dance forms and Classical Mudras using Deep Learning. </p><br>
+        <p>Complete project which can identify Mudras and dance form in uploaded image as well as captured image.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <!-- <section id="publications">
+    <h2 class="section-title">Publications</h2>
+    <ul>
+      <li>"Study on Web Performance Optimization" - 2024</li>
+      <li>"Next-Gen UI/UX Design Trends" - 2023</li>
+      <li>"Artificial Intelligence in Web Development" - 2022</li>
+    </ul>
+  </section> -->
+
+  <!-- Publications -->
+<section id="publications">
+    <h2 class="section-title">Publications</h2>
+    <div class="publications">
+      <div class="card">
+        <h3>"Detection of Melancholy and anxiety in children using Machine Learning" - 06/2023</h3>
+        <h5><i>IJSEDR publications, Vol.8 Issue6</i></h5>
+      </div>
+      <div class="card">
+        <h3>"Online Bug Tracking" - 10/2023</h3>
+        <h5><i>Juni Khyat, Vol.13 Issue10 No.02</i></h5>
+      </div>
+      <div class="card">
+        <h3>"Nrittya" - 04/2025</h3>
+        <h5><i>ISBN publications</i></h5>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certifications">
+      <div class="card">TechnoTut Solutions LLP - Data Analytics with MySQL</div>
+      <div class="card">Pantech.ai - Full-Stack Web Development</div>
+      <div class="card">Great Learning App - PYTHON-BASICS-ONLINE-For beginners</div>
+      <div class="card">TechCentrix - Inter- Collegiate Workshop on Python</div>
+      <div class="card">University of Mysore - Inter-Collegiate Workshop on Machine Learning and Deep Learning</div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2 class="section-title">Awards</h2>
+    <div class="certifications">
+      <div class="card">Best Outgoing Student title 2025</div>
+      <div class="card">Best Paper Presenter in International Conference - Fusion 2025</div>
+   </div>
+  </section>
+
+  <!-- Contact -->
+  <!-- <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-icons">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+      <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://goo.gl/maps/sampleLocation" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+  </section> -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p style="text-align:center; margin-bottom: 2rem;">Below are the details to reach out to me!</p>
+    <div class="contact-container">
+      <div class="contact-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h4>ADDRESS</h4>
+        <p>Mysore, India</p>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-phone-alt"></i>
+        <h4>CONTACT NUMBER</h4>
+        <p><a href="tel://7760702329">+91 77607-02329</a></p>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-envelope"></i>
+        <h4>EMAIL ADDRESS</h4>
+        <p><a href="mailto:brundashridhar@gmail.com">brundashridhar@gmail.com</a></p>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-download"></i>
+        <h4>DOWNLOAD RESUME</h4>
+        <p><a href="images/Brunda_CS_Developer.pdf">Resume</a></p>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Brunda CS. All rights reserved.</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+
+    // Navigation toggle functionality
+    const navToggle = document.getElementById('nav-toggle');
+    const navbar = document.getElementById('navbar');
+
+    navToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active'); // Toggle the active class
+    });
+
+    // Close the navigation when a link is clicked
+    const navLinks = document.querySelectorAll('.navbar a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active'); // Remove active class to close the menu
+        });
+    });
+</script>
+</body>
+</html>
