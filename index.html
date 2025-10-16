@@ -94,11 +94,11 @@
       line-height: 1.6;
       color: var(--secondary);
     }
-    .skills, .projects, .certifications {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
+   .skills, .projects, .certifications, .education, .publications {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 2rem; /* spacing between cards */
+}
     .card {
       background: #1a1a1a;
       padding: 2rem;
