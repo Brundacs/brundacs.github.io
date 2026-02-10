@@ -323,7 +323,7 @@ footer {
       top: 100%;
       left: 0;
       right: 0;
-      background-color: #1f1c2c;
+      background-color: #8a4e4e;
       padding: 1rem;
     }
   
@@ -332,6 +332,7 @@ footer {
       margin: 0.5rem 0;
     }
   }
+  
   
   
   @media (max-width: 600px) {
@@ -738,7 +739,7 @@ nav {
   footer {
     text-align: center;
     padding: 2rem;
-    background: #1f1c2c;
+    background: #8a4e4e;
     color: var(--secondary);
   }
   
